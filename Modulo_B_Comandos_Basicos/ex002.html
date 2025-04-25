@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa em html</title> <!-- titulo que aparele no html-->
+    <style> /*Estitulo, tudo que estiver dento desse style está em CSS*/
+        body{
+            background-color:rgb(108, 108, 207); /*Alterando a cor do fundo do site*/
+            color:white; /*Alterando a cor das letras*/
+            font: normal 25pt Arial; /*Aqui nós configuramos o tamanho da fonte*/ 
+        }
+        h1 {
+            color:aqua; /*Tudo que for h1 será azul, ou qualquer outra cor que esteja selecionada em color*/
+        } 
+    </style>
+</head>
+<body>
+    <h1> Olá mundo </h1>
+    <p> Ja me livrei da maldição</p>
+    <script>//Tudo apartir daqui é jscript
+        //var nome = window.prompt('Qual o seu nome? ') //aparece um pro mpt para podermos digitar algo, nesse caso é o nosso nome
+        //window.prompt funciona como uma entrada de dados e o window.alert funciona como uma saida de dados
+        //window.alert('é um grande prazer te conhecer, ' + nome) //usamos a concatenação para mostrar o nome
+        var numero1 = Number(window.prompt('Digite um número')) //Convertermos o numero de para int, pois o window lê como uma string
+        var numero2 = Number(window.prompt('Digite o segundo número')) //Podemos usar o number ára deixar o js decidir o melhor. Podemos usar o String(numero2), para transformar qualquer valor em string
+        var soma =  numero1 + numero2
+        //window.alert('O resultado dos números somados são: ' + soma) //Usaremos o TempleteStrings para evitar a concatenaão em uma string muito longa.
+        window.alert(`O resultado da soma netre ${numero1}  e ${numero2} é ${soma}`) //Usamos a crea `` para poder digitar e ativar o delimitador
+        //length mostra o tamanho da strng. nome.length
+        //nome.toUpperCase() tudo pra maiúculo // Lower minúscula
+    </script><!-- AQUI ACABA O JS-->
+</body>
+</html>
