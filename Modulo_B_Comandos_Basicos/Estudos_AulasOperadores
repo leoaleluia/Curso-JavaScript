@@ -1,0 +1,5 @@
+operador ternário
+var num = 8
+var num = num % 8 == 0? 5 : 8 
+Explicação: a variavel num2 vai receber 5 ou 8, porém depende da condição > num % 8 == 0, se sim, num recebe 5
+se não num recebe 8
