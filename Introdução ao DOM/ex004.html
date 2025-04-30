@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira atividade com o DOM</title>
-    <style>
-        body {
+    <style> /*Aqui podemos mecher no corrpo da nossa pasta html*/
+        body { 
             background-color: black;
             color: white;
             font-family: Arial;
@@ -16,8 +16,26 @@
 </head>
 <body>
     <h1>Testes</h1>
-    <div>Clique aqui</div>
+    <div id="Msg">Clique aqui</div> <!--Aqui é possivel fazer uma açção-->
     <p>Aprendendo a usar o DOM em js</p>
+    <p>Novo paragrafo de estudos</p>
     <hr>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //Pega o que está dentro do primeiro paragráfo e adciona na var p1
+        window.document.write(`Está escrito dessa maneira : ${p1.innerText}`) //printa a variável p1
+        p1.style.color = 'blue' // a variavel muda a cor do texto que ela recebeu
+        var corpo = window.document.body
+        corpo.style.background = '' //Para aleterar a cor de fundo usamos background
+        
+        //document.write(p1.innerHTML) //mostra o texto ja formatado, com um negrito por exemplo
+        //window.alert(p1.innerHTML) //dispara um alerta
+        var d1v = window.document.getElementById('Msg')
+        d1v.style.background = 'green'
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p2.innerHTML) /*window é a janela de entra dos objetos para serem procurado document, referece aos documentos a serem pocurados, html* e tem duas partes que é o body e o heat */
+        d1v.innerText = 'Estou aguardando' //Podemos alterar os valores das div.
+        window.document.getElementById('Msg').innerText = 'Olá, clique aqui' // reduzimos o comando a uma linha
+
+    </script>
 </body>
 </html>
