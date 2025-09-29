@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Dom para melhorar o html </title>
+    <link rel="shortcut icon" href="Audio-Megaphone-icon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            font: normal;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Revi sando os estudos</h1>
+    <p>Aqui vai o resultado </p> <!--Esse primeiro paragrafo é o de numero 0-->
+    <p>Revisão em js</p> 
+    <div>Clique em mim</div>
+    <script>
+        window.document.write(window.navigator.appName)
+        window.document.write('\n')
+        var corpo = window.document.body // a variável corpo agora pode controlar a cor de fundo da pagina
+        var p1 = window.document.getElementsByTagName('p')[0] /*Com esse metodo, pegaremos o valor do primeiro paragrafo do html, usamos a mesma lóigca dos algoritmos de programação*/
+        window.document.write(`está escrito dessa maneira ${p1.innerText}`)
+        p1.style.color = 'red' //mudamos a cor da letra atraves do js
+        corpo.style.background = "black"
+        window.alert(p1.innerText)
+    </script>
+</body>
+</html>
