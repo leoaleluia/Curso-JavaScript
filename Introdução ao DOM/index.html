@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão Dom para melhorar o html </title>
-    <link rel="shortcut icon" href="Audio-Megaphone-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Audio-Megaphone-icon.png" type="image/x-icon" id = "five1">
     <style>
         body{
             background-color: black;
@@ -22,11 +22,12 @@
     <script>
         window.document.write(window.navigator.appName)
         window.document.write('\n')
+        
         var corpo = window.document.body // a variável corpo agora pode controlar a cor de fundo da pagina
         var p1 = window.document.getElementsByTagName('p')[0]/*Com esse metodo, seleção por marca, pegaremos o valor do primeiro paragrafo do html, usamos a mesma lóigca dos algoritmos de programação*/ 
         var d = window.document.getElementById('msg')
         d.style.color = 'blue'
-        d.innerText = "estou aguardando" //alteramos o texto interno da div D por meio do JS
+        d.innerText = "estou aguardando" //alteramos o texto interno da div D por meio do JS    
         window.document.write(`está escrito dessa maneira ${p1.innerText}`)
         p1.style.color = 'red' //mudamos a cor da letra atraves do js
         corpo.style.background = "black"
