@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
+    <style>
+        div#area {
+            background-color: red;
+            font: normal 20pt Arial ;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Interaja </div> Podemos fazer dessa maneira, ou podemos fazer pelo addEvent do proprio JS-->
+    <div id="area"> Interaja</div>
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            area.innerText = "Clicou"
+            area.style.background = "green"
+                
+            }
+        function entrar(){
+            area.innerText = "entrou"
+            if (area.innerText == "entrou") {
+                area.style.background = "black"
+            }
+        }
+        function sair(){
+            area.innerText = "saiu"
+            area.style.background = "red"
+        }
+    </script>
+</body>
+</html>
