@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <link rel="shortcut icon" href="Car-icon.png" type="image/x-icon">
+</head>
+<body>
+    <h1 id="T1">Sistema de multas</h1>
+    velocidade<input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <p id="p1">ok1</p>
+    <script>
+
+        function verificar(){
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById(p1)
+            var vel = Number(txtv.value)
+            res.innerText = `sua velocidade atual é de ${vel}`
+        }
+    </script>
+</body>
+</html>
