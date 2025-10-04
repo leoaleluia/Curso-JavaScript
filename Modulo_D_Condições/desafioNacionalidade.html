@@ -8,6 +8,28 @@
 </head>
 <body>
     <h1 id="t1">Site sobre Nacionalidade</h1>
+    <p id="p1"></p>
+    <p id="p2"> <a href="" rel="external" target="_blank"  id="msc"> aqui</a> </p>
+    
+    Qual a sua Nacionalidade<input type="text" id="nacio">
+    <input type="button" value="Verificar musica" onclick="clicar()">
+
+    <script>
+        function clicar(){
+            var nacionalidade = window.document.getElementById('nacio')
+            var p1 = window.document.getElementById('p1')
+            var refmsc = window.document.getElementById('msc') //pegamos a referencia da tag <a> do html para alterar a msc em js
+            
+            //p1.innerText = `Sua nacionalidade é ${nacionalidade.value}`
+            if (nacionalidade.value == 'brasileiro'){
+                refmsc.href = "https://www.youtube.com/watch?v=HJZ3OF9AM5M&list=RDHJZ3OF9AM5M&start_radio=1"
+                p1.innerText = `bem vindo de volta ao seu pais`
+                p1.innerText += `ouça essa pedrada de musica `
+                
+            }
+
+        }
+    </script>
     
 </body>
 </html>
