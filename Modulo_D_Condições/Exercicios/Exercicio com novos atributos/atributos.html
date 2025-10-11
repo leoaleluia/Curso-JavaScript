@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==, initial-scale=1.0">
+    <title>Novos Atributos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="b1">
+    <head>
+        <h1 id="h1">Verificador de idade com novos atributos</h1> <!--Funciona como o cabeçalho, fica fora da section-->
+    </head>
+    <section>
+        <div>
+            <p>
+                Digite seu ano de nascimento <input type="number" name="txTano" id="txTano" min="1" max="2025">
+            </p>
+            <p>
+                Marque uma opção<input type="radio" name="rad" id="masc" checked> <!--O imput do tipo "radio"  se refere a bolinha de marcação, para poder fazer conexão com os outros imputs do mesmo tipo, temos de colocar o name = "rad", para ser homogeneo-->
+                <abbr title="Masculino"><label for="masc" id="masc">Masculino</label></abbr>  <!--Usamos o label para poder fazer uma referencia a opção que está sendo marcada-->
+                <input type="radio" name="rad" id="fem">
+                <abbr title="Feminino"><label for="fem">Femnino</label></abbr>
+            </p>
+            <p><input type="button" value="verificar" onclick="verificar()"></p>
+        </div>
+        <div>
+            <p id="p2"></p>
+        </div>
+        <div>
+            <p>Preencha o formulário acima para poder verificar</p>
+        </div>
+        
+    </section>
+    <footer>@LeoAleluia</footer>
+    <script src="cod.js"></script> <!--Chama o código js de outro documento dentro da pasta do site-->
+</body>
+</html>

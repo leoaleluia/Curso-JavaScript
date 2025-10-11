@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(117, 4, 4);
+    font: Arial
+}
+
+head{
+    color: aliceblue;
+    text-align: center;
+    font: normal 12 pt;
+    text-align: center;
+    
+}
+h1#h1{
+    text-align: center;
+}
+section{
+    background-color: aliceblue;
+    border-radius: 10px; /*serve para cortar as mordas*/
+    width:  600px; /*Esse campo se refere a largura da seção, para poder se destacar no body*/
+    margin: auto; /*centraliza a seção*/
+}
+footer{
+    text-align: center; /*centraliza o texto*/
+}
