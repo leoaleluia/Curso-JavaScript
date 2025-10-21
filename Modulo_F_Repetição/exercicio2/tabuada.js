@@ -4,16 +4,7 @@ function Gerar(){
     var txTtabuada = document.getElementById('txTtabuada')
     if (txTnum.value.length == 0){
         alert('Digite algo')
-    }else{
-        var sm = 11
-        var c = 0
-        txTtabuada.innerText = ''
-        for(c = 1; c < sm; c++){
-            var item = document.createElement('option')
-            item.text = `${num} x ${c} = ${num*c} `//aqui vai o que será guardado no option para mostrar na proxima linha
-            txTtabuada.appendChild(item)
-
-        }
+ 
 
 
         
