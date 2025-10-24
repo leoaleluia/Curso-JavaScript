@@ -4,7 +4,7 @@ function Gerar(){
     var txTtabuada = document.getElementById('txTtabuada')
     if (txTnum.value.length == 0){
         alert('Digite algo')
-        
+ 
 
 
         
