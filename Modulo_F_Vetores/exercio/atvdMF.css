@@ -1,0 +1,16 @@
+header{
+    text-align: center;
+}
+body{
+    background-color: rgb(224, 139, 69);
+}
+section{
+   background-color: rgb(30, 98, 119);
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    border-radius: 15px;
+}
+footer{
+    text-align: center ;
+}

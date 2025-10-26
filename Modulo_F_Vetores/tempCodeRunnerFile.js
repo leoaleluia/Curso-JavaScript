@@ -1,7 +1,11 @@
-function calculadora(){
-    function somar(n1, n2){
-        return n1 + n2
-    }
+var c = 0
+var lista = []
+while (c < 3) {
+    var idade = parseInt(prompt("Digite sua idade"))
+    lista.push(idade)
+    c++
 }
-
-console.log(calculadora.somar(2, 3))
+c = 0
+for(c in lista){
+    console.log(lista[c])
+}
