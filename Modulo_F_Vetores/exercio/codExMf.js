@@ -8,7 +8,7 @@ function adicionar(){
     var num = Number(txTnum.value)
     var listanum = document.getElementById('numeros')
 
-    if (lista.indexOf(num) == -1){
+    if (lista.indexOf(num) == -1){ //Caso não exista num na lista, o retorno é -1
         lista.push(num)
         var item = document.createElement('option')
         item.innerText = num
