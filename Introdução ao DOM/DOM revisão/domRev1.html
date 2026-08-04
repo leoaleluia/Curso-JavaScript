@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisão1</title>
+    <style>
+        body{
+            background: blue;
+            color: white;
+            font: normal 12pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando revisão com o DOM</h1>
+    <p id="p1">Aqui vai o resultado</p>
+    <p id="p2">aprendendo a usar o <strong>DOM</strong> em js</p>
+    <div>Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0];
+        p1.style.color = 'red'
+    </script>
+    
+</body>
+</html>

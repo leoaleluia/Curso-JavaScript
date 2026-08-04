@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+</body>
+<h1>Sistema de multas</h1>
+<p id="p1">Digite o número da via <input type="number" name="via" id="via"></p>
+<p id="p2">Digite a velocidade registrada <input type="number" name="vel" id="v1"></p>
+<p id="p3"></p>
+<ol><p>lista Teste</p>
+    <li>o resultado do item 1 da lista vem a baixo: <br></li>
+    <li id="l1"></li>
+</ol>
+<input type="button" value="vericiar" onclick="verificar()">
+
+<script>
+    var via = document.getElementById("via")
+    var velcd = document.getElementById("v1")
+    var res = document.getElementById("l1")
+    function verificar(){
+        var vel = Number(velcd.value)
+        var viaa = Number(via.value)
+        if(viaa == 5 && vel <= 50){
+            res.innerText = `sua velocidade é de ${vel} e não há multas`
+        }else{
+            res.innerText = `vocÊ foi multado`
+        }
+    }
+</script>
+</html>

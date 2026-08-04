@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade fixação</title>
+    <style>
+        div#d1{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">O valor mudou</div>
+    <input type="number" name="insira o num" id="t1">
+    <script>
+        var n1 = document.getElementById("t1")
+        var d1 = document.getElementById("d1")
+        d1.addEventListener('click', entrar)
+        function entrar(){
+            var num = Number(n1.value)
+            if(num > 10){
+                d1.innerText = `o valor alterou para ${num}`
+                d1.style.background = "black"
+            }else{
+                d1.innerText = `o Valor não alterou`
+                d1.style.background = "red"
+            }
+        }
+        
+    </script>
+</body>
+</html>

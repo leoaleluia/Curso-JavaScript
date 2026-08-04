@@ -2,10 +2,16 @@ function Gerar(){
     var txTnum = document.getElementById('txTnumero')
     var num = Number(txTnum.value)
     var txTtabuada = document.getElementById('txTtabuada')
-    if (txTnum.value.length == 0){
-        alert('Digite algo')
- 
+    txTtabuada.innerHTML = ''
 
+    if (num){
+        var i = 0;
+        while(i <= 10){
+            var item = document.createElement('option')
+            item.text = num * i
+            txTtabuada.appendChild(item)
+            i++
+        }
 
         
        // var item = document.createElement('option')/*nessas tres proximas linhas, temos as amostragem dos dados de forma dinamica, precisamos criar um item option para poder adcionar no mostrador*/
