@@ -33,15 +33,16 @@ function Verificar(){
         
         if (lista[c] > maior){
             maior = lista[c]
-            txTmaior.innerText = `O maior número é ${lista[c]}`
+
         }else{
             if (lista[c] < menor){
                 menor = lista[c]
-                txTmenor.innerText = `O menor número é ${lista[c]}`
             }
         }
         somatot += lista[c]     
     }
+    txTmenor.innerText = `O menor número é ${menor}`
+    txTmaior.innerText = ` o maior número é ${maior}` 
     media = somatot / totNum
     txTmedia.innerText = `A media é ${media}`
     soma.innerText = `A soma é ${somatot}`
