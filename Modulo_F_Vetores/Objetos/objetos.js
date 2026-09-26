@@ -1,6 +1,6 @@
 var nome = {nome:'', idade:0, 
     fNome(n){
-        this.nome = n
+        this.nome = n   
     }, 
     fIdade(i){
         this.idade = i
